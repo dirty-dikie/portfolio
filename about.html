@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dickson|About</title>
+
+
+</head>
+
+<body>
+
+<!--  NAVBAR -->
+<header id="header">
+  <nav class="navbar">
+    
+    <h2 class="logo">DMN.</h2>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link active">About</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero-section">
+  <div>
+    <h1>ABOUT ME</h1>
+    <p>I'm a passionate developer with expertise in creating beautiful and functional web experiences.</p>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="about-content">
+  <div class="about-container">
+
+    <div class="about2-text">
+      <p>💢 I'm a web developer and a graphic designer with a passion for creating innovative solutions. I build simple responsive and user-friendly websites.</p>
+
+      <p>💢 My journey in tech started with a curiosity about how things work, which evolved into a career focused on delivering high-quality code and exceptional user experiences.</p>
+
+      <p>💢 When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
+    </div>
+
+    <div class="about-image">
+      <img src="/img/dp.jpg" alt="Profile Picture">
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills2">
+  <div class="skills2container">
+    <h2>Skills & Expertise</h2>
+
+    <div class="skills2-grid">
+
+      <div class="skill2-card">
+        <h4>Frontend Development</h3>
+        <p>HTML, CSS, JavaScript</p>
+      </div>
+
+      <div class="skill2-card">
+        <h4>Graphical & Web Design</h4>
+        <p>Adobe Photoshop, Adobe Illustrator, Canva</p>
+      </div>
+
+      <div class="skill2-card">
+        <h4>Tools & Platforms</h4>
+        <p>Vs code, Github</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer> 
+  <p class="section-title">Also follow and contact me on:</p>
+       
+  <div class="container">
+            <div class="social-media">
+                <a href="https://linkedin.com/yourprofile" target="_blank"><img src="https://files.catbox.moe/59y0p5.png" alt="LinkedIn"></a>
+                <a href="https://github.com/dirty-dikie" target="_blank"><img src="https://files.catbox.moe/mrq4ia.png" alt="GitHub"></a>
+                <a href="https://instagram.com/dirty_money374" target="_blank"><img src="https://files.catbox.moe/a21nrq.png" alt="Instagram"></a>
+                <!-- Add more social media links as needed -->
+            </div>
+
+          
+<p><i>© 2026 Dickson Nyabate. All rights reserved.</i></p>
+</footer>
+</body>
+
+
+<script>
+
+  //vaigation scroll effect//
+  window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+
+</script>
+<style>
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)  ;
+
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 5vh;
+  width: 100%;
+  background: #0f172a;
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo {
+  color: #38bdf8;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* LINKS */
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 12px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 10px;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* Hover underline animation */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ACTIVE LINK */
+.nav-link.active {
+  color: #38bdf8;
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+  .nav-links {
+    position: static;
+    right: -100%;
+    top: 60px;
+    flex-direction: row;
+    width: auto;
+    padding: 0;
+    transition: 0.3s;
+  }
+
+  .nav-links.show {
+    right: 0;
+  }
+}
+/* battery*/
+.battery {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* SCROLLED STATE */
+.navbar.scrolled {
+  background: rgba(15, 23, 42, 0.95);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid #38bdf8; /* 🔥 blue line */
+  border-bottom: 2px solid #38bdf8;
+  box-shadow: 0 0 10px #38bdf8;
+}
+
+
+/* HERO */
+.hero-section {
+  padding: 100px 20px 20px;
+  color: white;
+  text-align: center;
+  border-bottom: 3px solid #ffffff3e;
+  margin-bottom: 20px;
+  h1{
+    text-shadow: #231e1ede 5px 5px 4px;
+    font: 30px 'Segoe UI', sans-serif;
+    font-weight: bold;
+
+  }
+  p{
+    font-size: 11px;
+    font-style: italic;
+    text-align: center;
+  }
+}
+
+
+/* CONTAINER */
+
+.about-content {
+  background: #ffffff3e;
+  border-radius: 25px;
+  border: 1px solid #ffffff3e;
+  max-width: fit-content;
+  width: 40%;
+  margin: auto;
+  
+}
+
+.about-container {
+  margin: auto;
+  padding: 0 20px;
+  border-radius: 50px;
+}
+/* ABOUT GRID */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 60px 0;
+}
+
+/* TEXT */
+.about2-text p{
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 11px;
+  text-align: justify;
+}
+
+/* IMAGE */
+.about-image img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50px;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  box-shadow: #0f172a 15px 15px 30px;
+}
+
+/* SKILLS */
+.skills2 {
+  padding: 10px ;
+  border-top: 3px solid #ffffff3e;
+  margin-top: 20px;
+}
+
+.skills2 h2 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.skills2-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.skill2-card { 
+      background: rgba(255, 255, 255, 0.272);
+      border-radius: 50px; 
+      padding: 10px; 
+      box-shadow: 0 5px 15px rgba(8, 65, 254, 0.1); 
+      text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+/* footer */
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+}
+footer .section-title {
+    font-size: 10px;
+    margin-bottom: auto;
+    color: #ffff;
+    font-style: italic;
+}
+.social-media a {
+    margin-right: 20px;
+}
+
+.social-media img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+</style>
+
+</html>
