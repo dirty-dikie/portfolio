@@ -136,7 +136,7 @@ transition: 0.8s ease;
   100% {opacity: 1;}
 }
 .hero{
-height:80vh;
+height:fit-content;
 padding: 120px 20px 60px;
 background:url(https://files.catbox.moe/mh5s1w.png) center/cover no-repeat;
 display:flex;
@@ -163,7 +163,8 @@ font-size:40px;
 .hero span{
 color:#38bdf8;
 outline-width: 10px;
-outline-color: #fff;
+outline-color: #da1111;
+font-size: 25px;
 }
 
 .hero h3{
